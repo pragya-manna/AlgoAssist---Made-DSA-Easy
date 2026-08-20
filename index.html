@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoAssist - Made DSA Easy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+   <script src="script1.js" defer></script>
+   <script src="box.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🤖 AlgoAssist</h2>
+      <button onclick="newChat()">New Chat</button>
+      <button onclick="loadHistory()">History</button>
+      <div id="historyList"></div>
+
+      <button>Settings</button>
+    </div>
+    <div>
+      <div class="profile">👤 PM</div>
+      <p style="font-size: 0.75rem; margin-top: 0.5rem;">AlgoAssist – Made DSA Easy v1.0</p>
+    </div>
+  </div>
+  <div class="main">
+    <div id="welcome-screen">
+      <h1>AlgoAssist</h1>
+      <p>Made DSA Easy</p>
+          <div class="tags">
+              <button class="tag-button" onclick="setExample('What is DSA?')">🧠 What is DSA?</button>
+              <button class="tag-button" onclick="setExample('What is an array?')">📦 What is an array?</button>
+              <button class="tag-button" onclick="setExample('Explain my code')">💬 Explain my Code</button>
+              <button class="tag-button" onclick="setExample('Trees and Graphs')">🌳 Trees and Graphs</button>
+          </div>
+    </div>
+    <div class="chat" id="chat-window"></div>
+  </div>
+  
+    
+    <div class="input-area">
+      <input type="text" id="question-input" placeholder="Type your DSA doubt here..." />
+      <button id="send-btn">📤</button>
+    </div>
+ 
+    
+
+ 
+</body>
+</html>
